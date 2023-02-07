@@ -2,7 +2,7 @@
 ![express](https://img.shields.io/badge/express-informational?style=flat&logo=express&logoColor=white&color=6aa6f8)
 ![mongo-db](https://img.shields.io/badge/mongo-informational?style=flat&logo=mongodb&logoColor=white&color=6aa6f8)
 
-# eCoomerce micro-service app
+# eCommerce micro-service app
 
 A practical example of NodeJS Microservices Architecture. 
 
