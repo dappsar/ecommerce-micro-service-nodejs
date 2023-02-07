@@ -8,7 +8,7 @@ A practical example of NodeJS Microservices Architecture.
 
 it is a simple eCommerce Application using Microservices Architecture without impact frontend. So each individual services will work independently to server the purpose and business logic.  
 
-![architecture](./images/architecture.png)
+![architecture](./.doc/images/architecture.png)
 
 ---
 

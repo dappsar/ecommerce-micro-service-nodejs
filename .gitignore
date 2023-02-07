@@ -1,3 +1,5 @@
-node_modules
-.env*
-*.log
+.DS_Store
+**/.log
+**/.env
+**/.DS_Store
+**/node_modules

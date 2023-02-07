@@ -1,4 +1,0 @@
-NODE_ENV='dev' or 'prod'
-APP_SECRET ='some_secret'
-MONGODB_URI='mongodb://localhost:27017/demo'
-PORT=8000
