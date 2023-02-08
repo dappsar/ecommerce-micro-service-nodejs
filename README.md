@@ -61,15 +61,18 @@ it is a simple eCommerce Application using Microservices Architecture without im
 - Create .env.dev file in each folder (app, customer, shopping, products).
 - Set the value of the variables based on the example file _sample_env_.
 
-### 4. Start
-- dev:
-
-  `$ npm run dev` (in each service: customer, shopping, products)
-  `$ npm run start` (app)
-
-- start with docker:
+### 4. Start services
 
   `$ docker-compose -f docker-compose.yml up`
+
+### 5. Start app
+
+- dev:
+
+  `$ npm run start`
+
+  **Important note**: Take care that the app has setted only on url base + port to all services in code, assuming services are started with a reverse proxy (nginx). So, if you start each service in separate url and port, the app will not work for you.
+
 
 ### 5. Postman endpoints
 See postman json file in [./.doc/pstman](./.doc/pstman)
