@@ -40,13 +40,14 @@ it is a simple eCommerce Application using Microservices Architecture without im
 - micro-services
 - nginx
 - docker, docker-compose
+- [jest-js](https://jestjs.io/)
 - [cloudamqp](https://www.cloudamqp.com/)
 
 ## Requirements For Initial Setup
 
-- Install [NodeJS](https://nodejs.org/en/)
-- Install [mongoDb](https://www.mongodb.com/docs/manual/tutorial)
-- Register and get a free Queue URL in [cloudamqp](https://www.cloudamqp.com/)
+- Install [NodeJS](https://nodejs.org/)
+- Install [mongoDb](https://www.mongodb.com/)
+- Register and get a free Queue in [cloudamqp](https://www.cloudamqp.com/) or use a local Queue (more details [here](https://www.rabbitmq.com/download.html))
 
 ## Setting Up
 ### 1. Clone/Download the Repository
@@ -73,8 +74,11 @@ it is a simple eCommerce Application using Microservices Architecture without im
 
   **Important note**: Take care that the app has setted only on url base + port to all services in code, assuming services are started with a reverse proxy (nginx). So, if you start each service in separate url and port, the app will not work for you.
 
+### 6. Run tests
 
-### 5. Postman endpoints
+  `$ npm run test`
+
+### 7. Postman endpoints
 See postman json file in [./.doc/pstman](./.doc/pstman)
 
 ---
