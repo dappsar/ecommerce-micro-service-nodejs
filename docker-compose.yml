@@ -3,7 +3,7 @@ services:
   nosql-db:
     image: mongo
     ports:
-      - "27018:27017"
+      - "27017:27017"
     container_name: nosql-db
     volumes:
       - ./db/:/data/db
@@ -20,7 +20,6 @@ services:
     volumes:
       - .:/app
       - /app/products/node_modules
-
     env_file:
       - ./products/.env.dev
   shopping:
@@ -48,7 +47,6 @@ services:
     restart: always
     depends_on:
       - "nosql-db"
-
     volumes:
       - .:/app/
       - /app/customer/node_modules

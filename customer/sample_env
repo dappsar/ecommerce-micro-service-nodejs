@@ -1,0 +1,12 @@
+APP_SECRET ='a_great_secret'
+
+# Mongo DB
+# MONGODB_URI='mongodb://nosql-db/msytt_customer'
+MONGODB_URI='mongodb://localhost:27017/msytt_customer'
+MSG_QUEUE_URL='amqps://USER:PSDWD@woodpecker.rmq.cloudamqp.com/USER'
+EXCHANGE_NAME='ONLINE_STORE'
+
+# Port
+PORT=8001
+
+
