@@ -72,7 +72,7 @@ it is a simple eCommerce Application using Microservices Architecture without im
 
   `$ npm run start`
 
-  **Important note**: Take care that the app has setted only on url base + port to all services in code, assuming services are started with a reverse proxy (nginx). So, if you start each service in separate url and port, the app will not work for you.
+  **Important note**: Take care that the app has setted only one url base + port to all services in code, assuming services are started with a reverse proxy (nginx). So, if you start each service in separate url and port, the app will not work for you.
 
 ### 6. Run tests
 
