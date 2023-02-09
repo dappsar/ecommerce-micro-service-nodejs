@@ -1,0 +1,40 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ci_verification:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Test Customer Services
+      working-directory: ./customer
+      run: |
+        npm ci
+        npm test
+        
+    - name: Test Products Services
+      working-directory: ./products
+      run: |
+        npm ci
+        npm test        
+        
+    - name: Test Shopping Services
+      working-directory: ./shopping
+      run: |
+        npm ci
+        npm test        
+                
