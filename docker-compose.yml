@@ -20,7 +20,6 @@ services:
     volumes:
       - .:/app
       - /app/products/node_modules
-
     env_file:
       - ./products/.env.dev
   shopping:
