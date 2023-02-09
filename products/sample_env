@@ -1,12 +1,6 @@
+NODE_ENV = 'local'
 APP_SECRET ='a_great_secret'
-
-# Mongo DB
-# MONGODB_URI='mongodb://nosql-db/msytt_product'
 MONGODB_URI='mongodb://localhost:27017/msytt_product'
 MSG_QUEUE_URL='amqps://USER:PSDWD@woodpecker.rmq.cloudamqp.com/USER'
 EXCHANGE_NAME='ONLINE_STORE'
-
-# Port
 PORT=8002
-
-
